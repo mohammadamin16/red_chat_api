@@ -4,4 +4,4 @@ channels
 channels_redis
 django-heroku
 gunicorn
-
+daphne
