@@ -3,3 +3,5 @@ aiohttp
 channels
 channels_redis
 django-heroku
+gunicorn
+
