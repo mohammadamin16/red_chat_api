@@ -1,3 +1,4 @@
 release: python manage.py migrate
-web: gunicorn channels_intro.asgi
+web: daphne channels_intro.asgi:channel_layer --port $PORT --bind 0.0.0.0 -v2
+
 
