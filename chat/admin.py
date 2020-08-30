@@ -1,4 +1,7 @@
-from django.contrib.admin import site
-from chat.models import Message
+from django.contrib import admin
 
-# site.admin.register(Message)
+from .models import Message
+
+
+admin.site.register(Message)
+

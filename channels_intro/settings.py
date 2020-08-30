@@ -58,8 +58,7 @@ ROOT_URLCONF = 'channels_intro.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')]
-        ,
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -142,5 +141,5 @@ CHANNEL_LAYERS = {
 
 
 AUTH_USER_MODEL = 'accounts.User'
-CORS_ORIGIN_ALLOW_ALL=True
+CORS_ORIGIN_ALLOW_ALL = True
 django_heroku.settings(locals())
