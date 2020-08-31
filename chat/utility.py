@@ -5,7 +5,8 @@ from .models import Message
 
 def message2json(message: Message):
     return {
-        'body': message.body
+        'body': message.body,
+        'name': message.name
     }
 
 @database_sync_to_async
